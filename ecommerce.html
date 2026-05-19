@@ -132,7 +132,8 @@
             <div style="border-top: 1px solid #eee; padding: 20px 0;">
                 <p style="color: var(--muted);">Your bag is currently empty.</p>
                 <p>Express Checkout:</p>
-                <input type="text" placeholder="Gift Card or Promo Code">
+                <label for="promo">Enter Gift Card or Promo Code:</label>
+                <input id="promo" type="text" placeholder="Gift Card or Promo Code">
             </div>
             <button class="btn-black" onclick="cls()">Proceed to Secure Pay</button>
         </div>
@@ -157,8 +158,8 @@
             <span class="close-trigger" onclick="cls()">✕</span>
             <h3>Client Login</h3>
             <div style="margin-bottom: 1rem;">
-                <input type="checkbox" style="width: auto;">
-                <span>Remember this device</span>
+                <input id="remember" type="checkbox" style="width: auto;">
+                <label for="remember">Remember this device</label>
             </div>
             <p style="color: var(--accent); font-size: 0.8rem; text-align: center;">Identity Server Status: Ready</p>
             <button class="btn-black" onclick="cls()">Sign In</button>

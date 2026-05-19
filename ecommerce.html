@@ -62,11 +62,11 @@
 
 
     <header>
-        <div class="logo" onclick="location.reload()">VOGUE & VALOR</div>
+        <a class="logo" onclick="location.reload()">VOGUE & VALOR</a>
         <div class="nav-links">
-            <div class="nav-item" onclick="openMod('cart')">Bag (0)</div>
-            <div class="nav-item" onclick="openMod('size')">Size Guide</div>
-            <div class="nav-item" onclick="openMod('auth')">Account</div>
+            <a class="nav-item" onclick="openMod('cart')">Bag (0)</a>
+            <a class="nav-item" onclick="openMod('size')">Size Guide</a>
+            <a class="nav-item" onclick="openMod('auth')">Account</a>
         </div>
     </header>
 
@@ -126,7 +126,7 @@
 
     <div id="mod-cart" class="modal-overlay">
         <div class="modal-box">
-            <span class="close-trigger" onclick="cls()">✕</span>
+            <button type="button" class="close-trigger" onclick="cls()">✕</button>
             <h1>Your Selection</h1>
             <div style="border-top: 1px solid #eee; padding: 20px 0;">
                 <p style="color: var(--muted);">Your bag is currently empty.</p>
@@ -140,7 +140,7 @@
 
     <div id="mod-size" class="modal-overlay">
         <div class="modal-box">
-            <span class="close-trigger" onclick="cls()">✕</span>
+            <button type="button" class="close-trigger" onclick="cls()">✕</button>
             <h1>Fit Consultant</h1>
             <div style="margin: 20px 0;">
                 <label for="usr-h">Your Height (cm)</label>
@@ -154,7 +154,7 @@
 
     <div id="mod-auth" class="modal-overlay">
         <div class="modal-box">
-            <span class="close-trigger" onclick="cls()">✕</span>
+            <button type="button" class="close-trigger" onclick="cls()">✕</button>
             <h1>Client Login</h1>
             <div style="margin-bottom: 1rem;">
                 <input id="remember" type="checkbox" style="width: auto;">
